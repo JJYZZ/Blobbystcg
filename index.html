@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BlobbyTCG</title>
+  <meta name="description" content="Mystery packs, updates, and links." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="card">
+    <header class="header">
+      <div class="avatar" aria-hidden="true">🫧</div>
+      <div>
+        <h1 id="brand">BlobbyTCG</h1>
+        <p class="tagline">Mystery packs • Singapore • Fast replies</p>
+      </div>
+    </header>
+
+    <section class="info">
+      <h2>What I sell</h2>
+      <p>
+        Mystery packs for collectors — clean pulls, fair odds, and packed safely.
+        Check the latest drops below.
+      </p>
+    </section>
+
+    <section class="links" aria-label="Links">
+      <a class="btn primary" href="https://example.com" target="_blank" rel="noopener">Shop / Listing</a>
+      <a class="btn" href="https://example.com" target="_blank" rel="noopener">Carousell</a>
+      <a class="btn" href="https://example.com" target="_blank" rel="noopener">Shopee</a>
+      <a class="btn" href="https://example.com" target="_blank" rel="noopener">TikTok</a>
+      <a class="btn" href="mailto:youremail@example.com">Email me</a>
+    </section>
+
+    <section class="notice">
+      <h2>Shipping & trust</h2>
+      <ul>
+        <li>Toploader + sleeve protection</li>
+        <li>Video packing proof (on request)</li>
+        <li>Meet-up / mail options</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> <span id="brand2">BlobbyTCG</span></p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    // Keep footer brand same as header brand automatically
+    document.getElementById("brand2").textContent = document.getElementById("brand").textContent;
+  </script>
+</body>
+</html>
